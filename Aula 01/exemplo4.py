@@ -1,4 +1,7 @@
-Nome= str(input('Qual é o seu nome?'))
+import datetime
+data_atual = datetime.date.today()
+ano_atual= data_atual.year
+nome= str(input('Qual é o seu nome?'))
 ano_nasc = int (input ("Informe o Ano de Nascimento: "))
-idade = 2024 - ano_nasc
-print ( Nome, "Sua idade é: ", idade) 
+idade = ano_atual - ano_nasc
+print ("Sr(a)",nome, "a sua idade é: ",idade," anos.") 
