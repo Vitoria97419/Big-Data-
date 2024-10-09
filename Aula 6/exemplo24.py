@@ -1,11 +1,16 @@
-usu=["Mia","Dia","Pria","Nia","Kya"]
-senha=["123","456","789","101112","131415"]
-usu=input("Informe o nome de acesso:")
-for i in range(len(usu)):
-    if usu[i] == usu:
-        resp="Usuario Encontrado"
-        break
+usuarios=["Mia","Dia","Pria","Nia","Kya"]
+senhas=["123","456","789","101112","131415"]
+usuario=input("Informe o nome de acesso:")
+for i in range(len(usuarios)):
+    if usuarios[i] == usuario:
+       senha = input("Informe a senha de acesso:")
+       if senhas [i] ==senha:
+          resp="Acesso Liberado"
+       else:
+          resp="Senha não confere"
+       break
+
     else:
         resp="Usuario não encontrado"
-    print(resp)
+        print(resp)
 
